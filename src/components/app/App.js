@@ -7,6 +7,8 @@ import CreditCard from '../creditcard/CreditCard';
 import Rating from '../rating/Rating';
 import DriverCard from '../drivercard/DriverCard';
 import LikeButton from '../likebutton/LikeButton';
+import ClickablePicture from '../clickablepicture/ClickablePicture';
+import Dice from '../dice/Dice';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -93,6 +95,11 @@ function App() {
         }}
       />
       <LikeButton /> <LikeButton />
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+      <Dice />
     </div>
   );
 }
