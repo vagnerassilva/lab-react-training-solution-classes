@@ -6,6 +6,8 @@ import BoxColor from '../boxcolor/BoxColor';
 import CreditCard from '../creditcard/CreditCard';
 import Rating from '../rating/Rating';
 import DriverCard from '../drivercard/DriverCard';
+import LikeButton from '../likebutton/LikeButton';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 
@@ -34,7 +36,6 @@ function App() {
       <Random min={1} max={100} />
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       <div className="d-flex">
         <CreditCard
           type="Visa"
@@ -73,7 +74,6 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -92,6 +92,7 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButton /> <LikeButton />
     </div>
   );
 }

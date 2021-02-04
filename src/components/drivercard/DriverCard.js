@@ -1,10 +1,11 @@
 import React from 'react';
-import BoxColor from '../drivercard/DriverCard';
+import BoxColor from '../boxcolor/BoxColor';
 import Rating from '../rating/Rating';
+import './DriverCard.css';
 
-const DriverCard = () => {
+const DriverCard = (props) => {
   return (
-    <BoxColor hex="#455eb5" class="m-2">
+    <BoxColor hex="#455eb5" class="m-2 rounded-3">
       <div className="d-flex justify-content-center align-items-center text-light p-2">
         <div>
           <img

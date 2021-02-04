@@ -2,7 +2,6 @@ import React from 'react';
 import './IdCard.css';
 
 const IdCard = (props) => {
-  console.log(props);
   return (
     <div className="border border-dark m-2 d-flex p-1">
       <img src={props.picture} />

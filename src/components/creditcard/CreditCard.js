@@ -5,13 +5,10 @@ import visa from '../imgs/visa.png';
 import mastercard from '../imgs/master-card.svg';
 
 const CreditCard = (props) => {
-  const cardImg = props.type == 'Visa' ? visa : mastercard;
+  const cardImg = props.type === 'Visa' ? visa : mastercard;
   return (
-    <div
-      className="col-md-4 card-width text-right"
-      style={{ color: props.color }}
-    >
-      <BoxColor class="rounded-3 m-1 p-2" hex={props.bgColor}>
+    <div className="col-md-4 " style={{ color: props.color }}>
+      <BoxColor class="rounded-3 card-width m-1 p-2" hex={props.bgColor}>
         <div>
           <header className="p-2 d-flex flex-row-reverse img-size">
             <img className="img-size" src={cardImg} alt="Credit-card logo" />
