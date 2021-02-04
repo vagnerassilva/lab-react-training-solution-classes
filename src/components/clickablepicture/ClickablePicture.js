@@ -5,7 +5,7 @@ class ClickablePicture extends React.Component {
     super(props);
     this.state = {
       src: props.img,
-      defaultSrc: props.img,
+      defaultSrc: [...new Set(props.img)],
       clickedSrc: props.imgClicked,
       clicked: false,
     };
