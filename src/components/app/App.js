@@ -10,6 +10,7 @@ import LikeButton from '../likebutton/LikeButton';
 import ClickablePicture from '../clickablepicture/ClickablePicture';
 import Dice from '../dice/Dice';
 import Carousel from '../carousel/Carousel';
+import NumbersTable from '../numberstable/NumbersTable';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -109,6 +110,7 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
+      <NumbersTable limit={12} />
     </div>
   );
 }
