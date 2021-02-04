@@ -1,4 +1,9 @@
 .card-width {
-  width: 30%;
+  width: 300px;
   height: auto;
+}
+
+.img-size {
+  height: 18px;
+  width: auto;
 }
