@@ -1,11 +1,16 @@
 import React from 'react';
 
 const BoxColor = (props) => {
+  console.log(props);
   const coloring = props.hex
     ? props.hex
     : `rgb(${props.r},${props.g},${props.b})`;
   return (
-    <div className={props.class} style={{ backgroundColor: coloring }}>
+    <div
+      onChange={props.onChange}
+      className={props.class}
+      style={{ backgroundColor: coloring }}
+    >
       {props.children}
     </div>
   );
