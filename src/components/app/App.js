@@ -12,6 +12,8 @@ import Dice from '../dice/Dice';
 import Carousel from '../carousel/Carousel';
 import NumbersTable from '../numberstable/NumbersTable';
 import FaceBook from '../facebook/FaceBook';
+import SignupPage from '../signuppage/SignupPage';
+import RGBColorPicker from '../colorpicker/RGBColorPicker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -113,6 +115,8 @@ function App() {
       />
       <NumbersTable limit={12} />
       <FaceBook />
+      <SignupPage />
+      <RGBColorPicker />
     </div>
   );
 }
