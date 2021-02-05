@@ -24,7 +24,6 @@ class NumbersTable extends React.Component {
           {x + i}
         </li>
       ));
-    console.log(liArray);
     return <ul className="list-group list-group-horizontal">{liArray}</ul>;
   }
 }
