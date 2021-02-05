@@ -41,8 +41,12 @@ function App() {
       <Greetings lang="fr">François</Greetings>
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-      <BoxColor r={255} g={0} b={0} />
-      <BoxColor r={128} g={255} b={0} />
+      <BoxColor r={255} g={0} b={0} class="border border-dark w-25 d-flex">
+        rgb(255,0,0)
+      </BoxColor>
+      <BoxColor r={128} g={255} b={0} class="border border-dark w-25">
+        rgb(128,255,0)
+      </BoxColor>
       <div className="d-flex">
         <CreditCard
           type="Visa"

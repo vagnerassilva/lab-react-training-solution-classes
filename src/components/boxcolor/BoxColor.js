@@ -1,11 +1,9 @@
 import React from 'react';
 
 const BoxColor = (props) => {
-  console.log(props);
   const coloring = props.hex
     ? props.hex
     : `rgb(${props.r},${props.g},${props.b})`;
-  console.log(coloring);
   return (
     <div
       onChange={props.onChange}
