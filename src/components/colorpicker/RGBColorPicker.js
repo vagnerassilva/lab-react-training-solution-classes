@@ -17,31 +17,31 @@ class RGBColorPicker extends React.Component {
     return (
       <div>
         <div className="d-flex">
-          <BoxColor r={this.state.r} g={0} b={0} />
-          <p>R:</p>{' '}
-          <SingleColorPicker
-            onChange={this.handleChange}
+          <BoxColor
             r={this.state.r}
-            name="r"
+            g={0}
+            b={0}
+            class="border border-dark w-25"
           />
+          <p>R:</p> <SingleColorPicker onChange={this.handleChange} name="r" />
         </div>
         <div className="d-flex">
-          <BoxColor r={0} g={this.state.g} b={0} />
-          <p>G:</p>{' '}
-          <SingleColorPicker
-            onChange={this.handleChange}
+          <BoxColor
+            r={0}
             g={this.state.g}
-            name="g"
+            b={0}
+            class="border border-dark w-25"
           />
+          <p>G:</p> <SingleColorPicker onChange={this.handleChange} name="g" />
         </div>
         <div className="d-flex">
-          <BoxColor r={0} g={0} b={this.state.b} />
-          <p>B:</p>{' '}
-          <SingleColorPicker
-            onChange={this.handleChange}
+          <BoxColor
+            r={0}
+            g={0}
             b={this.state.b}
-            name="b"
+            class="border border-dark w-25"
           />
+          <p>B:</p> <SingleColorPicker onChange={this.handleChange} name="b" />
         </div>
         <div className="d-flex">
           <BoxColor
@@ -49,6 +49,7 @@ class RGBColorPicker extends React.Component {
             r={this.state.r}
             g={this.state.g}
             b={this.state.b}
+            class="border border-dark w-25"
           />
           rgb({this.state.r},{this.state.g},{this.state.b})
         </div>
