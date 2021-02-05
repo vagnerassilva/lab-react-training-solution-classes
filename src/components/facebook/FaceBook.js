@@ -4,24 +4,41 @@ import IdCard from '../idcard/IdCard';
 
 class FaceBook extends React.Component {
   state = {
-    country: '',
+    country: 'USA',
   };
 
-  handleFilter = () => {};
+  handleFilter = (event) => {
+    this.setState({ country: event.target.name });
+  };
 
   render() {
-    console.log(profiles);
-    return profiles
-      .map((profile) => (
-        <IdCard
-          firstName={profile.firstName}
-          lastName={profile.lastName}
-          country={profile.country}
-          img={profile.img}
-          isStudent={profile.isStudent}
-        ></IdCard>
-      ))
-      .filter((profile) => profile.country === this.state.country);
+    return (
+      <div>
+        <div>
+          {profiles.map((profile) => (
+            <button onClick={this.handleFilter} name={profile.country}>
+              {profile.country}
+            </button>
+          ))}
+        </div>
+        <div>
+          {profiles.map((profile) =>
+            profile.country == this.state.country ? (
+              <IdCard
+                firstName={profile.firstName}
+                lastName={profile.lastName}
+                country={profile.country}
+                img={profile.img}
+                isStudent={profile.isStudent}
+              ></IdCard>
+            ) : (
+              ''
+            )
+          )}
+          ;
+        </div>
+      </div>
+    );
   }
 }
 
