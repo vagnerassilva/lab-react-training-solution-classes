@@ -120,7 +120,6 @@ function App() {
       <NumbersTable limit={12} />
       <FaceBook />
       <SignupPage />
-      <RGBColorPicker />
     </div>
   );
 }
